@@ -33,8 +33,8 @@ class Loader extends PluginBase {
     const PREFIX = "[LastJoin] ";
 
     public function onEnable(): void {
-        if (!is_dir($this->getDataFolder())) { @mkdir($this->getDataFolder(), 0777, true); }
-        if (!is_dir($this->getDataFolder() . "players/")) { @mkdir($this->getDataFolder() . "players/", 077, true); }
+        if (!is_dir($this->getDataFolder())) { @mkdir($this->getDataFolder()); }
+        if (!is_dir($this->getDataFolder() . "players/")) { @mkdir($this->getDataFolder() . "players/"); }
 
         $this->getServer()->getPluginManager()->registerEvents(new EventListener($this), $this);
     }
