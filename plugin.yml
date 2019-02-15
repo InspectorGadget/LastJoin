@@ -1,0 +1,14 @@
+name: LastJoin
+version: 1.0.0
+api: 3.0.0
+main: InspectorGadget\LastJoin\Loader
+author: InspectorGadget
+commands:
+  last:
+    description: "Command for Last Join"
+permissions:
+  lastjoin:
+    default: op
+    children:
+      lastjoin.admin:
+        description: "Admin perm node for Last Join"
